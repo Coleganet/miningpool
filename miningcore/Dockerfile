@@ -9,7 +9,7 @@ WORKDIR /miningcore
 
 ARG MININGCORE_REVISION
 
-RUN curl -L https://github.com/boomstarternetwork/miningcore/archive/$MININGCORE_REVISION.tar.gz \
+RUN curl -L https://github.com/oliverw/miningcore/archive/refs/tags/v69.tar.gz \
 | tar xz --strip 1
 
 WORKDIR /miningcore/src/MiningCore
